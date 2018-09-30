@@ -2,8 +2,8 @@
     if($_POST) {
         //define o pino como saída
        	system("gpio -g mode 17 out");
-       	//define o pino no estado 1
-        system("gpio -g write 17 1");
+       	//define o pino no estado 0, ativa o relê
+        system("gpio -g write 17 0");
        
        	$mensagem = "Bomba ligada em ". date('d/m/Y')." às ". date('H:i'). "\n";
         

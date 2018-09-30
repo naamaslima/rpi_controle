@@ -6,7 +6,7 @@
     $estado = system("gpio -g read 17"); //ler o estado do pino gpio 17 pelo terminal
  ?>
 </div>
-<?php  if ($estado == "1") { ?>
+<?php  if ($estado == "0") { ?>
         <div>
             <img src="<?=$url?>_storage/images/bomba-dagua-on.png" class="img-fluid" width="250px"></img>
         </div>
