@@ -22,7 +22,7 @@ Clone o projeto no diretório /var/www/html(diretório padrão do apache):
 ```
 
 # Montagem do circuito
-![circuito](https://uploaddeimagens.com.br/imagens/circuito_rpi_controle-jpg)
+![circuito rpi controle](https://user-images.githubusercontent.com/21150812/46259142-c813e980-c4ab-11e8-8f26-68f7b95e995f.jpg)
 
 O circuito acima está funcionando com o código do projeto, tente deixar igual.
 
