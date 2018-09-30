@@ -22,7 +22,7 @@ Clone o projeto no diretório /var/www(diretório padrão do apache):
 ```
 
 # Montagem do circuito
-![N|Solid](https://bl3302files.storage.live.com/y4p4V4CbDtlPuBvalilTBU-WA54GB4DlWLpk6MORpmO30prOVCat_vNMFGL019uWzVRYP8re_EQ8yTbsMYec3bumTTbXjEfh60I7P6AYGXEeSTLLkqAQ5AmHkgE_w9im6pZYA08Lna5eH2TAUuNsM_tDlV7sd-nwqjug2jHxeRRMZb9qP_CSGVpW0k-iZzzXept/Circuito%20RPi%20Controle.jpg?psid=1&width=1138&height=537)
+![alt circuito](https://bl3302files.storage.live.com/y4p4V4CbDtlPuBvalilTBU-WA54GB4DlWLpk6MORpmO30prOVCat_vNMFGL019uWzVRYP8re_EQ8yTbsMYec3bumTTbXjEfh60I7P6AYGXEeSTLLkqAQ5AmHkgE_w9im6pZYA08Lna5eH2TAUuNsM_tDlV7sd-nwqjug2jHxeRRMZb9qP_CSGVpW0k-iZzzXept/Circuito%20RPi%20Controle.jpg?psid=1&width=1138&height=537)
 
 O circuito acima está funcionando com o código do projeto, tente deixar igual.
 
