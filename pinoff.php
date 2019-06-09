@@ -2,8 +2,8 @@
     if($_POST) {
         //define o pino como saída
        	system("gpio -g mode 17 out");
-       	//define o pino no estado 0
-        system("gpio -g write 17 0");
+       	//define o pino no estado 1, desativa o relê
+        system("gpio -g write 17 1");
         
         $mensagem = "Bomba desligada em ". date('d/m/Y')." às ". date('H:i'). "\n";
         

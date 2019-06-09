@@ -1,6 +1,6 @@
 <?php
 	/* localizacao */
-	$url = "https://{$_SERVER['HTTP_HOST']}/rpi_controle/";
+	$url = "http://{$_SERVER['HTTP_HOST']}/rpi_controle/";
 	setlocale(LC_ALL, 'pt_BR');
 	date_default_timezone_set('America/Recife');
 ?>
@@ -9,7 +9,6 @@
 	<head> 
 		<title>RPI Controle</title>
 		<link rel="stylesheet" type="text/css" href="<?=$url?>_assets/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="shortcut icon" type="image/png" href="<?=$url?>resources/imgs/icon.png"/>
 		<!-- <meta http-equiv="refresh" content="2"> -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +24,11 @@
                 <div class="pt-3">
                     <p><strong>Última ação:</strong> <?php echo  $ultimaAcao = end( file( 'log.txt' ) ); ?> </p>    
                 </div>
-                 <?php 
-                    $estado = 0; //system("gpio -g read 17"); 
-                    if ($estado == "1") { ?>
+                <div style="display: none;">
+		 <?php 
+                    $estado = system("gpio -g read 17"); ?>
+		</div> 
+                <?php if ($estado == "0") { ?>
                         <div>
                             <img src="<?=$url?>_storage/images/bomba-dagua-on.png" class="img-fluid" width="250px"></img>
                         </div>

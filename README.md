@@ -1,5 +1,5 @@
 # RPi CONTROLE
-Este é um projeto de automação residencial utilizando a Raspberry Pi 3. É um simples controle que através da Web você pode ligar e desligar aparelhos eletronicos. Nesta versão, o programa tem apenas uma tela para ligar uma bomba d'água. Obs: Este projeto foi criado com intuino para uso pessoal.
+Este é um projeto de automação residencial utilizando a Raspberry Pi 3. É um simples controle que através da Web você pode ligar e desligar aparelhos eletrônicos. Nesta versão, o programa tem apenas uma tela para ligar uma bomba d'água. Obs: Este projeto foi criado com intuino para uso pessoal.
 
 # Requisitos
 * Módulo Relê
@@ -14,15 +14,15 @@ Como instalar WiringPi:
 http://wiringpi.com/download-and-install/
 
 # Instalação
-Clone o projeto no diretório /var/www(diretório padrão do apache):
+Clone o projeto no diretório /var/www/html(diretório padrão do apache):
 
 ```sh
- $ cd /var/www
+ $ cd /var/www/html
  $ git clone https://github.com/naamaslima/rpi_controle.git
 ```
 
 # Montagem do circuito
-![alt circuito](https://bl3302files.storage.live.com/y4p4V4CbDtlPuBvalilTBU-WA54GB4DlWLpk6MORpmO30prOVCat_vNMFGL019uWzVRYP8re_EQ8yTbsMYec3bumTTbXjEfh60I7P6AYGXEeSTLLkqAQ5AmHkgE_w9im6pZYA08Lna5eH2TAUuNsM_tDlV7sd-nwqjug2jHxeRRMZb9qP_CSGVpW0k-iZzzXept/Circuito%20RPi%20Controle.jpg?psid=1&width=1138&height=537)
+![circuito rpi controle](https://user-images.githubusercontent.com/21150812/46259142-c813e980-c4ab-11e8-8f26-68f7b95e995f.jpg)
 
 O circuito acima está funcionando com o código do projeto, tente deixar igual.
 
