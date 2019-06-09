@@ -19,54 +19,33 @@
             <h2><strong>RPi</strong> CONTROLE</h2>
         </section>
         <section class="container-fluid text-center">
-
-<div id="status">
+           
+            <div id="status">
                 <div class="pt-3">
                     <p><strong>Última ação:</strong> <?php echo  $ultimaAcao = end( file( 'log.txt' ) ); ?> </p>    
                 </div>
                 <div style="display: none;">
-		        <?php  $estado = system("gpio -g read 17"); ?>
-	            </div> 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <?php if ($estado == "0") { ?>
-                                <div>
-                                    <img src="<?=$url?>_storage/images/bomba-dagua-on.png" class="img-fluid" width="250px"></img>
-                                </div>
-                                <div>
-                                    <button class="btn btn-danger btn-lg" id="btn-desligar"><strong>Desligar</strong></button>
-                                </div>
-                        <?php } else { ?>
-                                <div>
-                                    <img src="<?=$url?>_storage/images/bomba-dagua-off.png" class="img-fluid" width="250px"></img>
-                                </div>
-                                <div>
-                                    <button class="btn btn-info btn-lg" id="btn-ligar"><strong>Ligar</strong></button>
-                                </div>
-                        <?php } ?>
+		 <?php 
+                    $estado = system("gpio -g read 17"); ?>
+		</div> 
+                <?php if ($estado == "0") { ?>
+                        <div style="max-width: 340px; margin: auto;" class="mb-3">
+			    <img src="<?=$url?>_storage/images/caixa-alto.png" class="img-fluid" width="230px"></img>   
+                            <img src="<?=$url?>_storage/images/bomba-dagua-on.png" class="img-fluid mb-3" style="vertical-align: bottom;" width="90px"></img>
                         </div>
-                        <div class="carousel-item" >
-                            <div>
-				 <img src="<?=$url?>_storage/images/caixa-alto.png" class="img-fluid" width="250px"></img>
-			    </div>
-			    <div>
-				<p>Nível Alto</p>
-			    </div>
+                        <div>
+                            <button class="btn btn-danger btn-lg" id="btn-desligar"><strong>Desligar</strong></button>
                         </div>
-                        
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" style="background-color: #999;" aria-hidden="true"></span>
-                        <span class="sr-only">Voltar</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" style="background-color: #999;" aria-hidden="true"></span>
-                        <span class="sr-only">Avançar</span>
-                    </a>
-                </div>
-            
-           </div>
+                <?php } else { ?>
+                         <div style="max-width: 340px; margin: auto;" class="mb-3">
+			    <img src="<?=$url?>_storage/images/caixa-alto.png" class="img-fluid" width="230px"></img>    
+                            <img src="<?=$url?>_storage/images/bomba-dagua-off.png" class="img-fluid mb-3" style="vertical-align:bottom;" width="90px"></img>
+                        </div>
+                        <div>
+                            <button class="btn btn-info btn-lg" id="btn-ligar"><strong>Ligar</strong></button>
+                        </div>
+                <?php } ?>
+            </div>
         </section>
    
     </body>
@@ -106,10 +85,8 @@
           setTime();
           function setTime() {
               setTimeout(setTime, 2000);
-              $('#status').load('status.php');
-	      $('.carousel').carousel()
+            //  $('#status').load('status.php');
           }
          });
-  	
     </script>
 </html>
