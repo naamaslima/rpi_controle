@@ -48,7 +48,13 @@
                         </div>
                 <?php } else { ?>
                          <div style="max-width: 340px; margin: auto;" class="mb-3">
-			    <img src="<?=$url?>_storage/images/caixa-alto.png" class="img-fluid" width="230px"/>    
+			    <?php if($nivel_alto == "0" && $nivel_medio == "0" && $nivel_baixo == "0") { ?>
+			    		<img src="<?=$url?>_storage/images/caixa-alto.png" class="img-fluid" width="230px"/>   
+			    <?php } elseif($nivel_alto == "1" && $nivel_medio == "0" && $nivel_baixo == "0") { ?>
+		    			<img src="<?=$url?>_storage/images/caixa-medio.png" class="img-fluid" width="230px"/>   
+			    <?php } elseif($nivel_alto == "1" && $nivel_medio == "1" && $nivel_baixo == "0") { ?>
+		    			<img src="<?=$url?>_storage/images/caixa-baixo.png" class="img-fluid" width="230px"/> 
+			    <?php } ?>
                             <img src="<?=$url?>_storage/images/bomba-dagua-off.png" class="img-fluid mb-3" style="vertical-align:bottom;" width="90px"/>
                         </div>
                         <div>
@@ -95,7 +101,7 @@
           setTime();
           function setTime() {
               setTimeout(setTime, 2000);
-            //  $('#status').load('status.php');
+              $('#status').load('status.php');
           }
          });
     </script>
