@@ -12,6 +12,9 @@
 		<!-- <meta http-equiv="refresh" content="2"> -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-title" content="Bomba">
+        <link rel="apple-touch-icon-precomposed" href="<?=$url?>_storage/images/favicon_bomba.png">
+        <link type="image/x-icon" rel="icon" href="<?=$url?>_storage/images/favicon_bomba.png">
 	</head> 
 	
 	<body class="bg-light">
